@@ -12,7 +12,7 @@ CREATE TABLE users (
 CREATE TABLE posts (
     id_post INT AUTO_INCREMENT PRIMARY KEY,
     post_title VARCHAR(255) NOT NULL,
-    post_content TEXT NOT NULL, -- Mudei para TEXT pois posts costumam ser longos
+    post_content TEXT NOT NULL,
     date_post DATETIME NOT NULL,
     user_id INT,
     FOREIGN KEY (user_id) REFERENCES users(id_user)

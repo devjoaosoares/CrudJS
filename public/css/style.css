@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #ff6f00;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  min-height: 75px;
+  background-color: #ff6f00;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+
+.section-about {
+    padding: 50px 250px;
+}
+
+.container-card {
+    padding-bottom: 0px;
+}
+
+.container-card h1{
+    background-color: #ff6f00;
+    border-radius:  10px 10px 0 0;
+    padding: 10px 10px;
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0px 50px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ff6f00;
+}
+
+.about-content p {
+    text-align: justify;
+    padding: 10px;
+}
+
+/*Layout Style*/
+main{
+  display: flex;
+}
+
+/* LADO ESQUERDO */
+.left-side{
+    width: 20%;
+    position: fixed;
+    height: 100vh;
+    padding: 0px 25px;
+    border-right: 1px solid #ff6f00;
+    background: white;
+    margin-top: 75px;
+}
+
+/* LADO DIREITO */
+.right-side{
+    margin-left: 20%;
+    width: 80%;
+    padding: 0;
+    margin-top: 75px;
+}
+
+/*Time Line Post Style */
+.postagem {
+    width: 100%;
+    border-bottom: 1px solid #ff6f0031;
+    padding-left: 50px;
+    
+}
+
+/*Post Header Style*/
+.post-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.post-header h2 {
+    margin-left: 10px;
+}
+
+.post-date {
+    margin-left: auto;
+    font-size: 0.8em;
+    color: #888;
+    justify-content: flex-end;
+}
+.userPostPhoto {
+    width: 75px;
+    border-radius: 50%;
+    border: 1px solid #ff6f00;
+}
+
+/*Post Content Style*/
+.post-main{
+    padding-right: 10px;
+}
+.post-images{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5px;
+}
+
+.post-images img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/*Post Footer Style*/
+.post-footer{
+    padding: 10px 0;
+    display: flex;
+    max-height: 75px;
+}
+
+.post-footer button {
+    border: 1px solid #ff6f00;
+    color: #ff6f00;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
